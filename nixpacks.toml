@@ -26,4 +26,4 @@ nixOverlays = []
 nixpkgsArchive = 'bf446f08bff6814b569265bef8374cfdd3d8f0e0'
 
 [start]
-cmd = 'python manage.py collectstatic --no-input --clear && python manage.py migrate && gunicorn toothease.wsgi'
+cmd = 'python manage.py collectstatic --no-input --clear && python manage.py migrate && python manage.py compilemessages -l 'pt_BR' && gunicorn toothease.wsgi'
