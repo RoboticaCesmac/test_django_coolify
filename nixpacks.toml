@@ -17,6 +17,7 @@ paths = ['/opt/venv/bin']
 nixPkgs = [
 'python3',
 'gcc',
+'gettext'
 ]
 nixLibs = [
 'zlib',
