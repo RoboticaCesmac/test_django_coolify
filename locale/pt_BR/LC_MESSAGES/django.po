@@ -1,0 +1,304 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-22 09:18-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: accounts/apps.py:9
+msgid "Accounts"
+msgstr "Contas"
+
+#: accounts/views.py:10
+msgid "Register a new user"
+msgstr "Registrar um novo usuário"
+
+#: accounts/views.py:22
+msgid "Returns the currently logged-in user."
+msgstr "Retorna o usuario atualmente logado."
+
+#: accounts/views.py:29
+msgid "Partially update the logged-in user."
+msgstr "Atualizar parcialmente o usuário logado."
+
+#: appointments/admin.py:27 appointments/models.py:20 kids/models.py:27
+msgid "Kid"
+msgstr "Criança"
+
+#: appointments/apps.py:8 appointments/models.py:45
+msgid "Appointments"
+msgstr "Consultas"
+
+#: appointments/models.py:9
+msgid "Pending"
+msgstr "Pendente"
+
+#: appointments/models.py:10
+msgid "Completed"
+msgstr "Completa"
+
+#: appointments/models.py:11
+msgid "Cancelled"
+msgstr "Cancelada"
+
+#: appointments/models.py:22
+msgid "Doctor"
+msgstr "Doutor"
+
+#: appointments/models.py:24 diaphragmatic_breathing/models.py:14
+msgid "Date"
+msgstr "Data"
+
+#: appointments/models.py:30
+msgid "Status"
+msgstr "Status"
+
+#: appointments/models.py:44 diaphragmatic_breathing/admin.py:28
+#: diaphragmatic_breathing/models.py:12
+msgid "Appointment"
+msgstr "Consulta"
+
+#: appointments/serializers.py:15
+msgid "Score can only be added to completed appointments."
+msgstr "A pontuação só pode ser adicionada a consultas concluídas."
+
+#: appointments/views.py:14
+msgid "Retrieve all appointments for the current user's kid."
+msgstr "Recupera todas as consultas do usuário atual."
+
+#: appointments/views.py:34
+msgid "Retrieve a specific appointment for the current user's kid."
+msgstr "Recupera uma consulta específica do usuário atual."
+
+#: appointments/views.py:37
+msgid "Partially update a specific appointment for the current user's kid."
+msgstr "Atualiza parcialmente uma consulta específica do usuário atual."
+
+#: appointments/views.py:40
+msgid "Delete a specific appointment for the current user's kid."
+msgstr "Exclui uma consulta específica do usuário atual."
+
+#: appointments/views.py:68
+msgid "Score must be a number"
+msgstr "A pontuação deve ser um número."
+
+#: appointments/views.py:83
+msgid "Create an appointment for the current user's kid."
+msgstr "Cria uma consulta para o usuário atual."
+
+#: appointments/views.py:99
+msgid "Update a specific appointment for the current user's kid."
+msgstr "Atualiza uma consulta específica do usuário atual."
+
+#: appointments/views.py:101
+msgid ""
+"If the kid in the serializer is not associated with the user, it will return "
+"a 404: Kid not Found."
+msgstr ""
+"Se o filho no serializador não pertencer ao usuário, retornará um erro 404: "
+"Filho não encontrado."
+
+#: core/validators.py:9
+msgid "Birth date cannot be in the future."
+msgstr "Data de nascimento não pode ser no futuro."
+
+#: core/validators.py:14
+msgid "Appointment date cannot be in the past."
+msgstr "Data de consulta não pode ser no passado."
+
+#: diaphragmatic_breathing/apps.py:8 diaphragmatic_breathing/models.py:18
+msgid "Diaphragmatic Breathings"
+msgstr "Respirações Diafragmáticas"
+
+#: diaphragmatic_breathing/models.py:17
+msgid "Diaphragmatic Breathing"
+msgstr "Respiração Diafragmática"
+
+#: diaphragmatic_breathing/models.py:22 diaphragmatic_breathing/models.py:34
+msgid "Step"
+msgstr "Passo"
+
+#: diaphragmatic_breathing/models.py:24
+msgid "Image"
+msgstr "Imagem"
+
+#: diaphragmatic_breathing/models.py:28
+msgid "Tutorial Diaphragmatic Breathing"
+msgstr "Tutorial Respiração Diafragmática"
+
+#: diaphragmatic_breathing/models.py:29
+msgid "Tutorial Diaphragmatic Breathings"
+msgstr "Tutorial Respirações Diafragmáticas"
+
+#: diaphragmatic_breathing/models.py:36
+msgid "Audio"
+msgstr "Audio"
+
+#: diaphragmatic_breathing/models.py:40
+#| msgid "Tutorial Diaphragmatic Breathing"
+msgid "Audio Tutorial Diaphragmatic Breathing"
+msgstr "Tutorial Respiração Diafragmática"
+
+#: diaphragmatic_breathing/models.py:41
+#| msgid "Tutorial Diaphragmatic Breathings"
+msgid "Audio Tutorial Diaphragmatic Breathings"
+msgstr "Audio Tutorial Respirações Diafragmáticas"
+
+#: diaphragmatic_breathing/views.py:23
+msgid ""
+"Retrieve all diaphragmatic breathings from appointments of current user's "
+"kids."
+msgstr ""
+"Recupera todas as respirações diafragmáticas da consulta do usuário atual."
+
+#: diaphragmatic_breathing/views.py:28
+msgid ""
+"Retrieve a specific diaphragmatic breathing from an appointment of the "
+"current user's kid."
+msgstr ""
+"Recupera uma respiração diafragmática específica da consulta do usuário "
+"atual."
+
+#: diaphragmatic_breathing/views.py:33
+msgid ""
+"Partially update a specific diaphragmatic breathing from an appointment of "
+"the current user's kid."
+msgstr ""
+"Atualiza parcialmente uma respiração diafragmática específica da consulta do "
+"usuário atual."
+
+#: diaphragmatic_breathing/views.py:38
+msgid ""
+"Delete a specific diaphragmatic breathing from an appointment of the current "
+"user's kid."
+msgstr ""
+"Exclui uma respiração diafragmática específica da consulta do usuário atual."
+
+#: diaphragmatic_breathing/views.py:61
+msgid ""
+"Create a diaphragmatic breathing for an appointment of the current user's "
+"kid."
+msgstr "Cria uma respiração diafragmática para a consulta do usuário atual."
+
+#: diaphragmatic_breathing/views.py:80
+msgid ""
+"Update a specific diaphragmatic breathing from an appointment of the current "
+"user's kid."
+msgstr ""
+"Atualiza uma respiração diafragmática específica da consulta do usuário "
+"atual."
+
+#: diaphragmatic_breathing/views.py:83
+msgid ""
+"If the appointment in the serializer is not associated with the user, it "
+"will return a 404: Appointment not Found."
+msgstr ""
+"Se a consulta no serializador não pertencer ao usuário, retornará um erro "
+"404: Consulta não encontrada."
+
+#: diaphragmatic_breathing/views.py:98
+msgid "Appointment not found"
+msgstr "Consulta não encontrada"
+
+#: diaphragmatic_breathing/views.py:104
+msgid "Returns tutorial diaphragmatic breathing steps."
+msgstr "Retorna os passos do tutorial de respirações diafragmáticas"
+
+#: diaphragmatic_breathing/views.py:114
+#| msgid "Returns tutorial diaphragmatic breathing steps."
+msgid "Returns tutorial diaphragmatic breathing steps audio."
+msgstr "Retorna os audios dos passos do tutorial de respirações diafragmáticas"
+
+#: kids/admin.py:25 kids/models.py:16
+msgid "Father"
+msgstr "Pai"
+
+#: kids/apps.py:8 kids/models.py:28
+msgid "Kids"
+msgstr "Crianças"
+
+#: kids/mixins.py:15
+msgid "Kid not found"
+msgstr "Filho não encontrado"
+
+#: kids/models.py:18
+msgid "Name"
+msgstr "Nome"
+
+#: kids/models.py:20 profiles/models.py:15
+msgid "Birth Date"
+msgstr "Data de nascimento"
+
+#: kids/views.py:10
+msgid "Retrieve all kids belonging to the current user."
+msgstr "Recupera todos os filhos do usuário atual."
+
+#: kids/views.py:11
+msgid "Create a new kid for the current user."
+msgstr "Cria um novo filho para o usuário atual."
+
+#: kids/views.py:13
+msgid "Retrieve a specific kid belonging to the current user."
+msgstr "Recupera um filho específico do usuário atual."
+
+#: kids/views.py:16
+msgid "Update a specific kid belonging to the current user."
+msgstr "Atualiza um filho específico do usuário atual."
+
+#: kids/views.py:19
+msgid "Partially update a specific kid belonging to the current user."
+msgstr "Atualiza parcialmente um filho específico do usuário atual."
+
+#: kids/views.py:22
+msgid "Delete a specific kid belonging to the current user."
+msgstr "Exclui um filho específico do usuário atual."
+
+#: profiles/admin.py:23
+msgid "User"
+msgstr "Usuário"
+
+#: profiles/apps.py:8 profiles/models.py:23
+msgid "Profiles"
+msgstr "Perfis"
+
+#: profiles/models.py:22
+msgid "Profile"
+msgstr "Perfil"
+
+#: profiles/views.py:13
+msgid "Retrieve current logged user and their profile details."
+msgstr "Retorna o usuário atualmente logado e o perfil."
+
+#: profiles/views.py:20
+msgid ""
+"Partially update the birth date, user first name and user last name in the "
+"profile of the current logged user."
+msgstr ""
+"Atualiza parcialmente a data de nascimento, primeiro nome e último nome no "
+"profile e usuário."
+
+#: toothease/admin.py:6
+msgid "Toothease Administration"
+msgstr "Toothease Administração"
+
+#: toothease/admin.py:7 toothease/admin.py:8
+msgid "Toothease Admin"
+msgstr "Toothease Admin"
+
+#~ msgid "Partially update current logged user profile birth date."
+#~ msgstr ""
+#~ "Atualiza parcialmente a data de nascimento do perfil do usuário "
+#~ "atualmente logado."
