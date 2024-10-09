@@ -32,9 +32,9 @@ cmd = "python manage.py collectstatic --no-input --clear && python manage.py mig
 
 [nginx]
 locations = [
-  {
-    path = "/media",
-    proxy = false,
-    root = "/app/media"
-  }
+{
+path = "/media",
+proxy = false,
+root = "/app/media"
+}
 ]
