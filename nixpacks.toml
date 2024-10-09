@@ -18,7 +18,7 @@ nixPkgs = [
 'python3',
 'gcc',
 'gettext',
-'nginx
+'nginx'
 ]
 nixLibs = [
 'zlib',
