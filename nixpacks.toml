@@ -33,6 +33,5 @@ run = "python manage.py collectstatic --no-input --clear && python manage.py mig
 
 [start]
 run = '''
-service nginx start
-gunicorn toothease.wsgi
+nginx && gunicorn toothease.wsgi:application --bind 0.0.0.0:8000
 '''
