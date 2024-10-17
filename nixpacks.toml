@@ -32,4 +32,7 @@ run = "cp ./nginx/nginx.conf /etc/nginx/nginx.conf"
 run = "python manage.py collectstatic --no-input --clear && python manage.py migrate && python manage.py compilemessages -l 'pt_BR'"
 
 [phases.start]
-run = "service nginx start gunicorn toothease.wsgi:application --bind 0.0.0.0:8000"
+run = '''
+service nginx start
+gunicorn toothease.wsgi:application --bind 0.0.0.0:8000
+'''
