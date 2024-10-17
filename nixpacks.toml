@@ -9,7 +9,7 @@ PYTHONHASHSEED = 'random'
 PYTHONUNBUFFERED = '1'
 [phases.install]
 dependsOn = ['setup']
-cmds = ['python -m venv --copies /opt/venv && . /opt/venv/bin/activate && pip install -r requirements.txt', 'mkdir -p /var/log/nginx']
+cmds = ['python -m venv --copies /opt/venv && . /opt/venv/bin/activate && pip install -r requirements.txt']
 cacheDirectories = ['/root/.cache/pip']
 paths = ['/opt/venv/bin']
 
@@ -26,8 +26,13 @@ nixLibs = [
 ]
 nixOverlays = []
 nixpkgsArchive = 'bf446f08bff6814b569265bef8374cfdd3d8f0e0'
+run = "cp ./nginx/nginx.conf /etc/nginx/nginx.conf"
 
-[phases.start]
-cmd = '''
-gunicorn toothease.wsgi:application --bind 0.0.0.0:8000
+[phases.build]
+run = "python manage.py collectstatic --noinput"
+
+[start]
+run = '''
+service nginx start
+gunicorn your_project_name.wsgi:application --bind 0.0.0.0:8000
 '''
