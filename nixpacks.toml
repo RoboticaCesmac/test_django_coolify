@@ -26,13 +26,10 @@ nixLibs = [
 ]
 nixOverlays = []
 nixpkgsArchive = 'bf446f08bff6814b569265bef8374cfdd3d8f0e0'
-cmd = "cp ./nginx/nginx.conf /etc/nginx/nginx.conf"
-
-[phases.build]
-cmd = "python manage.py collectstatic --no-input --clear && python manage.py migrate && python manage.py compilemessages -l 'pt_BR'"
+run = "cp ./nginx/nginx.conf /etc/nginx/nginx.conf"
 
 [phases.start]
-cmd = '''
+run = '''
 service nginx start
 gunicorn toothease.wsgi:application --bind 0.0.0.0:8000
 '''
