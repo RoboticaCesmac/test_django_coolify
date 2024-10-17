@@ -29,7 +29,7 @@ nixpkgsArchive = 'bf446f08bff6814b569265bef8374cfdd3d8f0e0'
 run = "cp ./nginx/nginx.conf /etc/nginx/nginx.conf"
 
 [phases.build]
-run = "python manage.py collectstatic --noinput"
+run = "python manage.py collectstatic --no-input --clear && python manage.py migrate && python manage.py compilemessages -l 'pt_BR'"
 
 [start]
 run = '''
